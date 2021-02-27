@@ -257,12 +257,7 @@ const animationTimeline = () => {
         repeatDelay: 1.4
       },
       0.3
-    )
-    .to(".six", 0.5, {
-      opacity: 0,
-      y: 30,
-      zIndex: "-1"
-    });
+    );
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
