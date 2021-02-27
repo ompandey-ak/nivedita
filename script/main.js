@@ -263,25 +263,7 @@ const animationTimeline = () => {
   // tl.timeScale(2);
 
   // Restart Animation on click
-  const replyBtn = document.getElementById("clickme");
-  replyBtn.addEventListener("click", () => {
-    tl.restart();
-  });
-  var today = new Date();
-  var tommorow = new Date("Feburary 21, 2021 21:15");
-  const bday_code = document.getElementById("bday_code");
-  bday_code.addEventListener('keyup', function (e) {
-    let s = bday_code.value;
-    if (s == "thankyou" || s == "thanku" || s == "thanks") {
-      if (today >= tommorow) {
-        document.getElementById("button").style.opacity = 1
-      } else {
-        document.getElementById("last-message").style.opacity = 1
-      }
-    }
-  });
-};
-
+  
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
