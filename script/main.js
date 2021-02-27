@@ -263,7 +263,9 @@ const animationTimeline = () => {
   // tl.timeScale(2);
 
   // Restart Animation on click
-  
+
+};
+
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
