@@ -346,39 +346,7 @@ const animationTimeline = () => {
       opacity: 0,
       y: 30,
       zIndex: "-1"
-    })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    .to(
-      "canvas",
-      0.1,
-      {
-        zIndex: 0
-      },
-      "+=1"
-    )
-    .to(".clickme strong", 0.5, {
-      scale: 1.2,
-      x: 10,
-      backgroundColor: "#ffc107",
-      color: "#fff"
-    })
-    .to(
-      ".last-smile",
-      0.5,
-      {
-        rotation: 90
-      },
-      "+=1"
-    )
-    .to(
-      "#bday_code",
-      0.5,
-      {
-        opacity: 1,
-        zIndex: 1000
-      },
-      "+=1"
-    );
+    });
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
